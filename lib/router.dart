@@ -18,6 +18,7 @@ import 'screens/InHeritedWidgetExample.dart';
 import 'screens/PageviewHero/PageviewHero.dart';
 import 'screens/GestureDetectorPage.dart';
 import 'screens/RadialExpansionDemo.dart';
+import 'screens/scopedModel/ScopedModelExample.dart';
 
 class RouterDataItem {
   final String name;
@@ -33,6 +34,11 @@ class RouterDataItem {
 }
 
 final List<RouterDataItem> routerData = [
+
+  
+  RouterDataItem(
+    name: "ScopedModelExample",
+    buildRoute: (_) => ScopedModelExample()),
   RouterDataItem(
     name: "RadialExpansionDemo",
     buildRoute: (_) => RadialExpansionDemo()),
